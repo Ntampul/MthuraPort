@@ -1,0 +1,212 @@
+:root {
+	--bg-color:  #605C85;;
+	--second-bg-color: #e5e5e5;
+	--text-color: #333333;
+	--main-color: #3AAFA9;
+	--main-color-dark: rgba(66, 133, 244, 0.5);
+	--box-shadow: 0 0 1rem var(--main-color);
+  }
+
+
+   
+
+  
+  *,
+  *::before,
+  *::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  }
+  
+  a {
+	text-decoration: none;
+  }
+  
+  ul,
+  ol,
+  li {
+	list-style: none;
+  }
+  
+  img {
+	vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-weight: inherit;
+	font-size: inherit;
+  }
+
+html,
+  body {
+	height: 100%;
+	font-size: 75%;
+	line-height: 1;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	/* font-family: "" */
+  }
+
+  
+  
+  body._lock {
+	overflow: hidden;
+  }
+
+  
+  /* --Header-- */
+  
+  /* Add this media query for responsiveness */
+@media (max-width: 768px) {
+	.header {
+	  padding: 1rem 5%;
+	}
+  
+	.header__content {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.header__logo {
+	  width: 80px; /* Adjust the width as needed */
+	  margin: 0; /* Remove margin */
+	}
+  
+	.menu__list {
+	  margin-top: 1rem;
+	  display: flex;
+	  justify-content: space-around;
+	  width: 100%;
+	}
+  
+	.menu__list > li {
+	  margin: 0;
+	}
+  }
+  
+  /* --Header-- */
+/* --Header-- */
+
+/* --Header-- */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 9%;
+	background-color: var(--main-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+  }
+  
+  .header__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+  }
+  
+  .header__logo-container {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+  }
+  
+  .header__logo {
+	width: 50px;
+	height: auto;
+	display: block;
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+  }
+  
+  /* Adjust the position of the h2 element */
+  .home__title {
+	margin-left: 1rem; /* Add margin to create spacing between the logo and the h2 element */
+  }
+  
+  
+  .header__logo:hover {
+	transform: scale(1.1);
+  }
+  
+  .header__menu {}
+  
+  /* --Nav menu-- */
+  
+  .menu {}
+
+  .menu__icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for clickability */
+  }
+  
+  .menu__body {}
+  
+  .menu__list {
+    display: flex;
+  }
+  
+  .menu__list > li {
+	position: relative;
+	margin: 0 0 0 4rem;
+  }
+  
+  .menu__link {
+	font-size: 1.7rem;
+	color: var(--text-color);
+	transition: color 0.3s ease;
+  }
+  
+  .menu__link:hover,
+  .menu__link._active {
+	color: #f0f0f0;
+  }
+  
+  /* --General-- */
+  
+  .page-section {
+	min-height: 100vh;
+	padding: 10rem 9% 5rem;
+  }
+  
+  .page-section__title span {
+	color: var(--main-color);
+  }
+  
+  .page-section__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 4.5rem;
+  }
+  
+  .btn {
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background-color: var(--main-color);
+	border-radius: 4rem;
+	box-shadow: var(--box-shadow);
+	font-size: 1.6rem;
+	color: var(--second-bg-color);
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	box-shadow: none;
+  }
+  
+  /* --Home-- */
