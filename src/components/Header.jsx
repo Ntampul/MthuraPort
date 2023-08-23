@@ -35,7 +35,7 @@ const Header = () => {
         <div className="menu__icon" onClick={handleMenuToggle}>
           <span></span>
         </div>
-        <nav classN="menu__body">
+        <nav className="menu__body">
           <ul className="menu__list">
             <li>
               <a href="#" data-goto="home" onClick={handleMenuClick} className="menu__link">
