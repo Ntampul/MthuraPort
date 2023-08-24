@@ -1,6 +1,4 @@
-
 import { useState } from 'react';
-import Logo from '../assets/mthura.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,9 +23,9 @@ const Header = () => {
 
   return (
     <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
-      <imgbg-preview
-        src="mthura.png"
-        alt="header_logo"
+      <img
+        src="https://i.ibb.co/zX1PNBY/mthura-veed-remove-background.png"
+        alt="header__logo"
         className="header__logo"
       />
 
@@ -57,7 +55,7 @@ const Header = () => {
                 Projects
               </a>
             </li>
-           
+            
             <li>
               <a href="#" data-goto="contact" onClick={handleMenuClick} className="menu__link">
                 Contacts
