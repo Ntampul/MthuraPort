@@ -24,7 +24,7 @@ Welcome to my portfolio as i am looking for a job as a software DEVELOPER..
               </p>
             </div>
             <div className="home__social social-media">
-              <a href="https://github.com/mzimasimbongwe" className="social-media__link animated">
+              <a href="https://github.com/Ntampul" className="social-media__link animated">
                 <FaGithub className="icon" /> <br></br>
               </a>
               <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/" className="social-media__link animated">

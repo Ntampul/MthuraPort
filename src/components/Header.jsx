@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import {FaHome, FaAddressBook, FaAccessibleIcon, FaBuffer } from "react-icons/fa";
+import {BsPersonCircle  } from "react-icons/bs";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,29 +38,29 @@ const Header = () => {
         <nav className="menu__body">
           <ul className="menu__list">
             <li>
-              <a href="#" data-goto="home" onClick={handleMenuClick} className="menu__link">
+              <a href="#" data-goto="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
                 Home
               </a>
             </li>
             <li>
               <a href="#" data-goto="about" onClick={handleMenuClick} className="menu__link">
-                About
+                <BsPersonCircle/>About
               </a>
             </li>
             <li>
               <a href="#" data-goto="services" onClick={handleMenuClick} className="menu__link">
-                Skills
+                <FaAccessibleIcon/>Skills
               </a>
             </li>
             <li>
               <a href="#" data-goto="portfolio" onClick={handleMenuClick} className="menu__link">
-                Projects
+                <FaBuffer/>Projects
               </a>
             </li>
             
             <li>
               <a href="#" data-goto="contact" onClick={handleMenuClick} className="menu__link">
-                Contacts
+                <FaAddressBook/>Contacts
               </a>
             </li>
           </ul>
