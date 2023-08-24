@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import hearder_logo from '../assets/mthura.png'
+import Logo from '../assets/mthura.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
