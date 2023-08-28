@@ -275,20 +275,41 @@ html,
 	color: var(--second-bg-color);
 	box-shadow: var(--box-shadow);
   }
-.about__description{
-	font-size: 50px;
-	transform: translate(0%, 800%);
-	-webkit-transform: translate(0%, 800%);
-	-moz-transform: translate(0%, 800%);
-	-ms-transform: translate(0%, 800%);
-	-o-transform: translate(0%, 800%);
-}
+
  .about__sub-title{
 	font-size: 15px;
 	transform: translate(0%, 5000%);
-	-webkit-transform: translate(0%, 5500%);
+	-webkit-transform: translate(0%, 5000%);
 	-moz-transform: translate(0%, 5000%);
 	-ms-transform: translate(0%, 5000%);
 	-o-transform: translate(0%, 5000%);
 	text-align: center;
 }
+.descr{
+	font-size: 15px;
+	transform: translate(0%, 100%);
+	-webkit-transform: translate(0%, 1700%);
+	-moz-transform: translate(0%, 1700%);
+	-ms-transform: translate(0%, 1700%);
+	-o-transform: translate(0%, 1700%);
+}
+
+.skills{
+	font-size: 15px;
+	transform: translate(0%, 5500% );
+	text-align: center;
+	-webkit-transform: translate(0%, 5500% );
+	-moz-transform: translate(0%, 5500% );
+	-ms-transform: translate(0%, 5500% );
+	-o-transform: translate(0%, 5500% );
+}
+.Skills_Icon{
+	display: flex;
+	justify-content: center;
+	transform: translate(0%,700%);
+	-webkit-transform: translate(0%,700%);
+	-moz-transform: translate(0%,700%);
+	-ms-transform: translate(0%,700%);
+	-o-transform: translate(0%,700%);
+}
+

@@ -32,7 +32,6 @@ const Home = () => {
                 <FaInstagram className="icon" /><br></br>
               </a>
             </div>
-         
           </div>
         </div>
         <div className="home__description">
@@ -44,7 +43,7 @@ const Home = () => {
         <div className="home__image">
           <img src="https://i.ibb.co/3SVW3Ch/Whats-App-Image-2023-08-21-at-14-23-34.jpg"alt="home-image" />
          <div className="cv"> <a href="mthunzi.pdf" className="btn">Download CV</a></div>
-        </div>                   
+        </div>
       </section>
   );
 };

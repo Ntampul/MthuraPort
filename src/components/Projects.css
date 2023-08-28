@@ -1,0 +1,58 @@
+.my-work {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: left;
+    transform: translate(0%,50%)  ;
+    -webkit-transform: translate(0%,50%)  ;
+    -moz-transform: translate(0%,50%)  ;
+    -ms-transform: translate(0%,50%)  ;
+    -o-transform: translate(0%,50%)  ;
+}
+
+.Proj{
+    text-align: center;
+
+}
+  
+  .description-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .project-image img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+  }
+  
+  .description {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 15px;
+    transform: translate(0%,85%)  ;
+    -webkit-transform: translate(0%,85%)  ;
+    -moz-transform: translate(0%,85%)  ;
+    -ms-transform: translate(0%,85%)  ;
+    -o-transform: translate(0%,85%)  ;
+}
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
