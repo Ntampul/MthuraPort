@@ -4,6 +4,7 @@ import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 import './App.css'
 import About from './components/About.jsx'
+//import About from './components/About.jsx'
 //import Contacts from './components/Contacts.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,8 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header/>
     <Home/>
     <About/>
-    
- 
-    
   </React.StrictMode>
 )
