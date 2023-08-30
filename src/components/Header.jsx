@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import {FaHome, FaAddressBook, FaAccessibleIcon, FaBuffer } from "react-icons/fa";
-import {BsPersonCircle  } from "react-icons/bs";
-
+import { FaHome, FaAddressBook, FaAccessibleIcon, FaBuffer } from "react-icons/fa";
+import { BsPersonCircle } from "react-icons/bs";
+import { Link } from 'react-router-dom'; // Import Link component
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,19 +10,7 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleMenuClick = (event) => {
-    event.preventDefault();
-    const target = event.target.getAttribute('data-goto');
-    const targetElement = document.getElementById(target);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: 'smooth',
-      });
-      setMenuOpen(false); // Close the menu after clicking a link
-    }
-  };
+  // Remove handleMenuClick function since we'll use Link components for routing
 
   return (
     <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
@@ -39,30 +27,35 @@ const Header = () => {
         <nav className="menu__body">
           <ul className="menu__list">
             <li>
-              <a href="#" data-goto="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
+              {/* Use Link component for routing */}
+              <Link to="/home" className="menu__link">
+                <FaHome size='1.5rem' />
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" data-goto="about" onClick={handleMenuClick} className="menu__link">
+              {/* Use Link component for routing */}
+              <Link to="/about" className="menu__link">
                 <BsPersonCircle/>About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" data-goto="services" onClick={handleMenuClick} className="menu__link">
+              {/* Use Link component for routing */}
+              <Link to="/skills" className="menu__link">
                 <FaAccessibleIcon/>Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" data-goto="portfolio" onClick={handleMenuClick} className="menu__link">
+              {/* Use Link component for routing */}
+              <Link to="/projects" className="menu__link">
                 <FaBuffer/>Projects
-              </a>
+              </Link>
             </li>
-            
             <li>
-              <a href="#" data-goto="contact" onClick={handleMenuClick} className="menu__link">
+              {/* Use Link component for routing */}
+              <Link to="/contact" className="menu__link">
                 <FaAddressBook/>Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

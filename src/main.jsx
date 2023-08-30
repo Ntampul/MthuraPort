@@ -7,6 +7,7 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Contacts from './components/Contacts.jsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header/>

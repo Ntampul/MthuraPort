@@ -7,7 +7,7 @@ import './Projects.css';
 const Projects = () => {
   return (
     
-    <div className='my-work'>
+    <div className='my-work'id="projects">
         <h3 className="Proj">My Projects</h3>
       <div className='description-icons'>
         <div className='project-image'><img src={web} alt='School Website' /></div>

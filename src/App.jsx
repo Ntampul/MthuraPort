@@ -1,17 +1,20 @@
-/*import React from 'react'
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-//import { Header } from  "./Components";
-//import { About, Contacts, Home, Skills, Projects } from "./components";
-import "./components/Home.css"
-import About from './components/About.jsx'
-
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import './App.css'; // You can create this CSS file for styling
 
 function App() {
   return (
-   <Home/>
-  
-     );
-    }
+    <div className="app">
+      <video className="background-video" autoPlay muted loop>
+        <source src="/background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="content">
+        {/* Your other content goes here */}
+      </div>
+    </div>
+  );
+}
 
-    export default App;*/
+export default App;
+

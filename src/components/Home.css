@@ -23,12 +23,10 @@
     height: 100%;
     top: 0;
 }
-  
   .home__content {
     padding: 40px;
     text-align: center;
   }
-  
   .social-media {
     margin-top: 20px;
   }
@@ -89,7 +87,12 @@
     width:100%;
     border-radius: 50%;
     float: left;
-  }
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+}
   .home__content, .home__description {
     display: flex;
     font-size: 1.6rem;
