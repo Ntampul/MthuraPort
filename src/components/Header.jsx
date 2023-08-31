@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {FaHome, FaAddressBook, FaBuffer } from "react-icons/fa";
 import {BsPersonCircle  } from "react-icons/bs";
-import {Link} from "react-router-dom"
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,7 +55,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#contacts" react-anchor-link-smooth-scroll="#contacts" onClick={handleMenuClick} className="menu__link">
+              <a href="#contacts" data-go="#contacts" onClick={handleMenuClick} className="menu__link">
                 <FaAddressBook/>Contacts
               </a>
             </li>
@@ -67,3 +67,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+

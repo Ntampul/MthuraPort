@@ -51,10 +51,6 @@
     text-decoration: none;
     font-weight: bold;
     transform: translate(-130%, 700%);
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
     -webkit-transform: translate(-130%, 700%);
     -moz-transform: translate(-130%, 700%);
     -ms-transform: translate(-130%, 700%);
