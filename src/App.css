@@ -277,12 +277,12 @@ html,
   }
 
  .about__sub-title{
-	font-size: 15px;
-	transform: translate(0%, 5000%);
-	-webkit-transform: translate(0%, 5000%);
-	-moz-transform: translate(0%, 5000%);
-	-ms-transform: translate(0%, 5000%);
-	-o-transform: translate(0%, 5000%);
+	font-size: 30px;
+	transform: translate(0%, 2500%);
+	-webkit-transform: translate(0%, 2500%);
+	-moz-transform: translate(0%, 2500%);
+	-ms-transform: translate(0%, 2500%);
+	-o-transform: translate(0%, 2500%);
 	text-align: center;
 }
 .descr{
@@ -295,13 +295,13 @@ html,
 }
 
 .skills{
-	font-size: 15px;
-	transform: translate(0%, 5500% );
+	font-size: 30px;
+	transform: translate(0%, 2700% );
 	text-align: center;
-	-webkit-transform: translate(0%, 5500% );
-	-moz-transform: translate(0%, 5500% );
-	-ms-transform: translate(0%, 5500% );
-	-o-transform: translate(0%, 5500% );
+	-webkit-transform: translate(0%, 2700% );
+	-moz-transform: translate(0%, 2700% );
+	-ms-transform: translate(0%, 2700% );
+	-o-transform: translate(0%, 2700% );
 }
 .Skills_Icon{
 	display: flex;

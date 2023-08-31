@@ -1,6 +1,6 @@
 .my-work {
     display: flex;
-    font-size: 15px;
+    font-size: 30px;
     flex-direction: column;
     align-items: left;
     transform: translate(0%,30%)  ;
@@ -13,9 +13,6 @@
 .Proj{
    
     text-align: center;
-  
-
-
 }
   
   .description-icons {

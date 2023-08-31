@@ -39,8 +39,9 @@ const Contacts = () => {
 
   return (
     
+    
     <div className='container' id='contacts'>
-      
+      <h3 className="Conta"> Get in Touch..... </h3>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

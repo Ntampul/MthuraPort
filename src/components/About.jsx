@@ -5,7 +5,7 @@ import {BiLogoJavascript ,BiLogoJava, BiLogoFigma,BiLogoPython  } from "react-ic
 
 const About = () => {
   return (
-    <section className="page-section about" id="about">
+    <section className="page-section about" id="aboutme">
      
       <div className="about__content">
         <h3 className="about__sub-title">Junior Software Developer</h3>
