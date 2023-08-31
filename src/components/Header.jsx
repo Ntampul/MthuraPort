@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {FaHome, FaAddressBook, FaAccessibleIcon, FaBuffer } from "react-icons/fa";
 import {BsPersonCircle  } from "react-icons/bs";
-
+//import {Link} from "react-router-dom"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,28 +39,28 @@ const Header = () => {
         <nav className="menu__body">
           <ul className="menu__list">
             <li>
-              <a href="#home" data-goto="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
+              <a href="#home" data-goto ="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" data-goto="about" onClick={handleMenuClick} className="menu__link">
+              <a href="#About" data-goto="about" onClick={handleMenuClick} className="menu__link">
                 <BsPersonCircle/>About
               </a>
             </li>
             <li>
-              <a href='#' data-goto="skills" onClick={handleMenuClick} className="menu__link">
+              <a href='#' data-goto ="skills" onClick={handleMenuClick} className="menu__link">
                 <FaAccessibleIcon/>Skills
               </a>
             </li>
             <li>
-              <a href="#projects" data-goto="portfolio" onClick={handleMenuClick} className="menu__link">
+              <a href="#Projects" data-goto="#Projects" onClick={handleMenuClick} className="menu__link">
                 <FaBuffer/>Projects
               </a>
             </li>
-            
+    
             <li>
-              <a href="#" data-goto="contact" onClick={handleMenuClick} className="menu__link">
+              <a href="#Contacts" data-goto="#Contacts" onClick={handleMenuClick} className="menu__link">
                 <FaAddressBook/>Contacts
               </a>
             </li>
