@@ -39,7 +39,7 @@ const Header = () => {
         <nav className="menu__body">
           <ul className="menu__list">
             <li>
-              <a href="#home" data-scroll-to ="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
+              <a href="#home" data-go ="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
                 Home
               </a>
             </li>

@@ -9,7 +9,7 @@ const Home = () => {
 
 
   return (
-     
+
       <section className="page-section home" id="home">
         <div className="home__content rain">
           <div className="home__content">
@@ -18,7 +18,7 @@ const Home = () => {
             <h2 className="home__title">
                <span className="multiple-text"></span>
             </h2>
-            
+
             <div className="home__social social-media">
               <a href="https://github.com/Ntampul" className="social-media__link animated">
                 <FaGithub className="icon" /> <br></br>

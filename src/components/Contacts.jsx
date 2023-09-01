@@ -1,9 +1,9 @@
 
+import React, { useRef } from 'react';
 import { useState } from 'react';
 import './Contacts.css';
 import { FaGithub, FaLinkedin,FaInstagram  } from "react-icons/fa";
 import { BiLogoGoogle  } from "react-icons/bi";
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
@@ -54,8 +54,6 @@ const Contacts = () => {
   };
 
   return (
-    
-    
     <div className='container' id='contacts'>
       <h3 className="Conta"> Get in Touch..... </h3>
       <form ref={form} onSubmit={sendEmail}>
@@ -95,7 +93,7 @@ const Contacts = () => {
       </form>
       <div className="Rabali">
         <a href="https://github.com/Ntampul">
-          <FaGithub size= '3rem' color='white'/> 
+          <FaGithub size= '3rem' color='white'/>
         </a>
 
         <a href="https://mail.google.com/mail/u/0/#inbox">
@@ -108,7 +106,6 @@ const Contacts = () => {
           <FaInstagram size='3rem' color='white'/>
         </a>
 
-        
         {/* Add more icons as needed */}
       </div>
       <p className="copyright">©2023 MTHUNZI NTAMPULA. All rights reserved.</p>
