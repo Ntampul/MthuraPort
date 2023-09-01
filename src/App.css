@@ -45,7 +45,7 @@ html,
 	height: 100%;
 	font-size: 75%;
 	line-height: 1;
-	background-color: var(--bg-color);
+	background-color: gray;
 	color: var(--text-color);
 	/* font-family: "" */
   }

@@ -3,8 +3,24 @@ import { useState } from 'react';
 import './Contacts.css';
 import { FaGithub, FaLinkedin,FaInstagram  } from "react-icons/fa";
 import { BiLogoGoogle  } from "react-icons/bi";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
+      .then((result) => {
+          console.log(result.text);
+          console.log(message.sent)
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -42,7 +58,7 @@ const Contacts = () => {
     
     <div className='container' id='contacts'>
       <h3 className="Conta"> Get in Touch..... </h3>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
         <div>
           <label htmlFor="name">Name:</label>
           <input

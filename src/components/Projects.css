@@ -3,11 +3,11 @@
     font-size: 30px;
     flex-direction: column;
     align-items: left;
-    transform: translate(0%,30%)  ;
-    -webkit-transform: translate(0%,30%)  ;
-    -moz-transform: translate(0%,30%)  ;
-    -ms-transform: translate(0%,30%)  ;
-    -o-transform: translate(0%,30%)  ;
+    transform: translate(0%,40%)  ;
+    -webkit-transform: translate(0%,40%)  ;
+    -moz-transform: translate(0%,40%)  ;
+    -ms-transform: translate(0%,40%)  ;
+    -o-transform: translate(0%,40%)  ;
 }
 
 .Proj{
@@ -59,4 +59,4 @@
   button:hover {
     background-color: #0056b3;
   }
-  
+ 
