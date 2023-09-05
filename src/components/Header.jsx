@@ -1,73 +1,79 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {FaHome, FaAddressBook, FaBuffer } from "react-icons/fa";
 import {BsPersonCircle  } from "react-icons/bs";
+import './Hearder.css';
 
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
+const NavBar = () => {
+  const [active, setActive] = useState(false);
+  const [toggleIcon, setToggleIcon] = useState(false);
+  const [currentPage, setCurrentPage] = useState('Home'); // Initialize with the default active page (e.g., 'Home')
+
+  const navToggle = () => {
+    setActive(!active);
+    setToggleIcon(!toggleIcon);
   };
 
-  const handleMenuClick = (event) => {
-    event.preventDefault();
-    const target = event.target.getAttribute('data-goto');
-    const targetElement = document.getElementById(target);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: 'smooth',
-      });
-      setMenuOpen(false); // Close the menu after clicking a link
-    }
+  const handleNavLinkClick = (page) => {
+    setCurrentPage(page);
+    setActive(false); // Close the navigation menu when a link is clicked
+    setToggleIcon(false);
   };
 
   return (
-    <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
-      <img
-        src="https://i.ibb.co/zX1PNBY/mthura-veed-remove-background.png"
-        alt="header__logo"
-        className="header__logo"
-      />
-
-      <div className={`header__menu menu ${menuOpen ? 'open' : ''}`}>
-        <div className="menu__icon" onClick={handleMenuToggle}>
-          <span></span>
-        </div>
-        <nav className="menu__body">
-          <ul className="menu__list">
-            <li>
-              <a href="#home" data-go ="home" onClick={handleMenuClick} className="menu__link"><FaHome size='1.5rem' />
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#aboutme" data-scroll-to="aboutme" onClick={handleMenuClick} className="menu__link">
-                <BsPersonCircle/>About
-              </a>
-            </li>
-
-            <li>
-              <a href="#Projects" data-goto="#Projects" onClick={handleMenuClick} className="menu__link">
-                <FaBuffer/>Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contacts" data-go="#contacts" onClick={handleMenuClick} className="menu__link">
-                <FaAddressBook/>Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <nav className={`nav ${active ? 'nav__active' : ''}`}>
+      <a href="contacts" className="nav__brand">
+        Ntampula Mthunzi
+      </a>
+      <div onClick={navToggle} className={toggleIcon ? 'nav_toggler toggle' : 'nav_toggler'}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
-    </header>
+      <ul className="nav__menu">
+        <li className="nav__item">
+          <a
+            href="#home"
+            className={`nav__link ${currentPage === 'Home' ? 'active' : ''}`}
+            onClick={() => handleNavLinkClick('Home')}
+          ><FaHome size='1.5rem' />
+            Home
+          </a>
+        </li>
+        <li className="nav__item">
+          <a
+            href="#about"
+            className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
+            onClick={() => handleNavLinkClick('About')}
+          ><BsPersonCircle size='1.5rem' />
+             About
+          </a>
+        </li>
+        <li className="nav__item">
+          <a
+            href="#projects"
+            className={`nav__link ${currentPage === 'Projects' ? 'active' : ''}`}
+            onClick={() => handleNavLinkClick('projects')}
+          > <FaBuffer size='1.5rem'/>
+            Projects
+          </a>
+        </li>
+        <li className="nav__item">
+          <a
+            href="#contact"
+            className={`nav__link ${currentPage === 'Contact' ? 'active' : ''}`}
+            onClick={() => handleNavLinkClick('contacts')}
+          ><FaAddressBook size='1.5rem'/>
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
-export default Header;
-
+export default NavBar;
 
 
 

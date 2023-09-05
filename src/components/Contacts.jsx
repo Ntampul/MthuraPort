@@ -2,8 +2,8 @@
 import React, { useRef } from 'react';
 import { useState } from 'react';
 import './Contacts.css';
-import { FaGithub, FaLinkedin,FaInstagram  } from "react-icons/fa";
-import { BiLogoGoogle  } from "react-icons/bi";
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { BiLogoGoogle } from 'react-icons/bi';
 import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
@@ -12,13 +12,17 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
-      .then((result) => {
+    emailjs
+      .sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
+      .then(
+        (result) => {
           console.log(result.text);
-          console.log(message.sent)
-      }, (error) => {
+          console.log(message);
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   const [name, setName] = useState('');
@@ -54,7 +58,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className='container' id='contacts'>
+    <div className="container" id="contacts">
       <h3 className="Conta"> Get in Touch..... </h3>
       <form ref={form} onSubmit={sendEmail}>
         <div>
@@ -93,20 +97,18 @@ const Contacts = () => {
       </form>
       <div className="Rabali">
         <a href="https://github.com/Ntampul">
-          <FaGithub size= '3rem' color='white'/>
+          <FaGithub size="3rem" color="white" />
         </a>
 
         <a href="https://mail.google.com/mail/u/0/#inbox">
-            <BiLogoGoogle size='3rem' color='white'/>
+          <BiLogoGoogle size="3rem" color="white" />
         </a>
-        <a href='https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/'>
-          <FaLinkedin size='3rem' color="white"/>
+        <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
+          <FaLinkedin size="3rem" color="white" />
         </a>
-        <a href='https://www.instagram.com/bhut_mthunz/'>
-          <FaInstagram size='3rem' color='white'/>
+        <a href="https://www.instagram.com/bhut_mthunz/">
+          <FaInstagram size="3rem" color="white" />
         </a>
-
-        {/* Add more icons as needed */}
       </div>
       <p className="copyright">©2023 MTHUNZI NTAMPULA. All rights reserved.</p>
     </div>

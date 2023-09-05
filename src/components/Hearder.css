@@ -1,1 +1,164 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 90.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: rgba(25, 99, 90, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: small;
+}
+
+.nav__brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 80vh; /* Adjust as needed */
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+/* Style the active nav-link differently */
+.nav__menu a.active {
+    color: #ca7d7d; 
+    font-weight: bold; 
+}
+
+
+.nav__toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    transition: 0.4s ease-in;
+}
+
+.nav__toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__toggler {
+        display: block;
+        margin-left: 30vh; /* Adjust as needed */
+    }
+
+    .nav__brand {
+        margin: 0;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50%;
+        height: 42vh;
+        background: rgba(25, 99, 90, 1);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        z-index: 1000;
+    }
+
+    .nav_active .nav_menu {
+        transform: translateX(0);
+    }
+
+    .toggle .line1,
+    .toggle .line3 {
+        transform: rotate(-45deg) translate(-3px, 5px); /* Adjusted position */
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+    /* Toggler icon animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-3px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-3px, -5px);
+}
+
+/* Toggler icon animation for active state */
+.nav__active .toggle .line1 {
+    transform: rotate(50deg) translate(7px, 7px);
+}
+
+.nav__active .toggle .line2 {
+    opacity: 0;
+}
+
+.nav__active .toggle .line3 {
+    transform: rotate(-45deg) translate(2.5px, 0);
+}
+}
+
+@media screen and (max-width: 480px) {
+    .nav__toggler {
+        display: block;
+        margin-left: 0vh; /* Adjust as needed */
+    }
+
+
+    .nav__menu {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        height: 32vh;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        z-index: 1000;
+    }
+}
+
+@media screen and(min-width: 900px) and (max-width: 1180px){
+    .nav__menu{
+        flex-direction: row; 
+        gap: 3rem;
+        margin-right: 45vh;
+
+    }
+    .nav__brand{
+        margin: left;
+    }
+}
+  

@@ -1,30 +1,25 @@
-// src/App.js
-// import React from 'react';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 
-
 function App() {
   return (
-    // eslint-disable-next-line react/jsx-no-undef
-    <BrowserRouter>
-      <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-          
-            <Route path="projects" element={<Projects />} />
-            <Route path="contact" element={<Contacts />} />
-          </Route>
-        </Routes>
-    </BrowserRouter>
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contacts" component={Contacts} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+
 export default App;
