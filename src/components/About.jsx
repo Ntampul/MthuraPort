@@ -5,7 +5,7 @@ import {BsFiletypeSql  } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="about__content"id="abo"> 
+    <div className="about__content"id="a"> 
     <section className="page-section about" >
       
         <h3 className="about__sub-title">Junior Software Developer</h3>
@@ -27,7 +27,7 @@ const About = () => {
     <BiLogoJava size='5rem' className="rotate-icon" style={{ color: 'orange' }} />
     <BiLogoFigma size='5rem' className="rotate-icon" style={{ color: 'pink' }} />
     <BiLogoPython size='5rem' className="rotate-icon" style={{ color: 'teal' }} />
-    <FaGitAlt size='5rem' className="rotate-icon" style={{ color: 'gray' }} />
+    <FaGitAlt size='5rem' className="rotate-icon" style={{ color: 'yellow' }} />
     <BiLogoCPlusPlus size='5rem' className="rotate-icon" style={{ color: 'teal' }} />
     <BsFiletypeSql size='5rem' className="rotate-icon" style={{ color: '' }} />
   </li>

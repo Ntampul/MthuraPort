@@ -1,8 +1,9 @@
 //import { useEffect } from 'react';
 //import Typed from 'typed.js';
-//import Video from './Video.mp4';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa6';
-import './Home.css';
+import './Home.css'
+
+
 
 
 const Home = () => {

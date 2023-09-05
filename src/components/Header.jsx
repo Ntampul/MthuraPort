@@ -23,7 +23,7 @@ const NavBar = () => {
 
   return (
     <nav className={`nav ${active ? 'nav__active' : ''}`}>
-      <a href="contacts" className="nav__brand">
+      <a href="#co" className="nav__brand">
         Ntampula Mthunzi
       </a>
       <div onClick={navToggle} className={toggleIcon ? 'nav_toggler toggle' : 'nav_toggler'}>
@@ -43,9 +43,9 @@ const NavBar = () => {
         </li>
         <li className="nav__item">
           <a
-            href="#abo"
+            href="#a"
             className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('abo')}
+            onClick={() => handleNavLinkClick('a')}
           ><BsPersonCircle size='1.5rem' />
              About
           </a>
@@ -55,9 +55,9 @@ const NavBar = () => {
             href="#projects"
             className={`nav__link ${currentPage === 'Projects' ? 'active' : ''}`}
             onClick={() => handleNavLinkClick('projects')}
-          > <FaBuffer size='1.5rem'/>
-            Projects
+          > <FaBuffer  size='1.5rem'/> <span>Projects</span>
           </a>
+           
         </li>
         <li className="nav__item">
           <a
