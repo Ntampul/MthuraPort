@@ -59,4 +59,14 @@
   button:hover {
     background-color: #0056b3;
   }
- 
+ .slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}

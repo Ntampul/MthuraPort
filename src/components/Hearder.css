@@ -50,7 +50,7 @@ a {
 }
 /* Style the active nav-link differently */
 .nav__menu a.active {
-    color: #ca7d7d; 
+    
     font-weight: bold; 
 }
 
@@ -161,4 +161,16 @@ a {
         margin: left;
     }
 }
+/* Define styles for normal (non-hover) state */
+.nav__link {
+    color: white; /* Change the color to your desired text color */
+    transition: color 0.3s; /* Add a smooth transition effect for color changes */
+  }
+  
+  /* Define styles for the hover state */
+  .nav__link:hover {
+    color: #007; /* Change the color to your desired hover color */
+    /* You can also add other styles like background-color, border, etc. */
+  }
+  
   

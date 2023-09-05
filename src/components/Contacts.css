@@ -28,13 +28,12 @@
   input,
   textarea {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     justify-content: center;
   }
-  
   .error {
     color: #ff0000;
     font-size: 14px;

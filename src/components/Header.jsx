@@ -43,9 +43,9 @@ const NavBar = () => {
         </li>
         <li className="nav__item">
           <a
-            href="#about"
+            href="#abo"
             className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('About')}
+            onClick={() => handleNavLinkClick('abo')}
           ><BsPersonCircle size='1.5rem' />
              About
           </a>
@@ -61,9 +61,9 @@ const NavBar = () => {
         </li>
         <li className="nav__item">
           <a
-            href="#contact"
+            href="#co"
             className={`nav__link ${currentPage === 'Contact' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('contacts')}
+            onClick={() => handleNavLinkClick('co')}
           ><FaAddressBook size='1.5rem'/>
             Contacts
           </a>
