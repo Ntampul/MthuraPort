@@ -42,7 +42,7 @@
   }
   
   button {
-    background-color: #007bff;
+    background-color:  #19635A;;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -81,3 +81,14 @@
 .contacts{
   justify-content: center;
 }
+/* Add this CSS to your stylesheet */
+.social-icon {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* Add other styles here, e.g., padding, margin, etc. */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+  color:  #19635A; /* Change the color on hover (you can use your desired color) */
+}
+

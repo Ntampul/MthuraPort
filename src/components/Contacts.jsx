@@ -96,22 +96,27 @@ const Contacts = () => {
         <button type="submit">Send</button>
       </form>
       <div className="Rabali">
-        <a href="https://github.com/Ntampul">
-          <FaGithub size="3rem" color="white" />
-        </a>
+  <a href="https://github.com/Ntampul">
+    <FaGithub size="3rem" color="white" class="social-icon" />
+  </a>
 
-        <a href="https://mail.google.com/mail/u/0/#inbox">
-          <BiLogoGoogle size="3rem" color="white" />
-        </a>
-        <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
-          <FaLinkedin size="3rem" color="white" />
-        </a>
-        <a href="https://www.instagram.com/bhut_mthunz/">
-          <FaInstagram size="3rem" color="white" />
-        </a>
+  <a href="https://mail.google.com/mail/u/0/#inbox">
+    <BiLogoGoogle size="3rem" color="white" class="social-icon" />
+  </a>
+  <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
+    <FaLinkedin size="3rem" color="white" class="social-icon" />
+  </a>
+  <a href="https://www.instagram.com/bhut_mthunz/">
+    <FaInstagram size="3rem" color="white" class="social-icon" />
+  </a>
+</div>
+
+        <div class="copyright">
+            &copy; 2023 Mthunzi Ntampula. All rights reserved.
+        </div>
+        
       </div>
-      <p className="copyright">©2023 MTHUNZI NTAMPULA. All rights reserved.</p>
-    </div>
+
   );
 };
 

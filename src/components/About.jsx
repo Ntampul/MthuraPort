@@ -1,6 +1,6 @@
 import './About.css';
 import {FaCss3Alt , FaCss3, FaReact, FaGitAlt  } from "react-icons/fa";
-import {BiLogoJavascript ,BiLogoJava, BiLogoFigma,BiLogoPython  } from "react-icons/bi";
+import {BiLogoJavascript ,BiLogoJava, BiLogoFigma,BiLogoPython, BiLogoCPlusPlus,BiLogoPhp,BiLogoAngular  } from "react-icons/bi";
 
 
 const About = () => {
@@ -16,13 +16,24 @@ const About = () => {
     <h4 className="skills">MYSKILLS</h4>
 
     <ul className="Skills_Icon">
-            <li>
-              <FaCss3Alt size='5rem' />  <FaCss3 size='5rem' /> <BiLogoJavascript size='5rem' /> <FaReact size='5rem' /> <br></br>
-              <BiLogoJava size='5rem' />  <BiLogoFigma size='5rem' />  <BiLogoPython size='5rem'/> <FaGitAlt size='5rem' />
+  <li>
+    <FaCss3Alt size='5rem' className="rotate-icon" style={{ color: 'red' }} />  
+    <FaCss3 size='5rem' className="rotate-icon" style={{ color: 'blue' }} /> 
+    <BiLogoJavascript size='5rem' className="rotate-icon" style={{ color: 'green' }} />
+    <FaReact size='5rem' className="rotate-icon" style={{ color: 'purple' }} />
+    < BiLogoPhp size='5rem' className="rotate-icon" style={{ color: 'purple' }} />
+    <BiLogoAngular  size='5rem' className="rotate-icon" style={{ color: 'Yellow' }} />
+    
+    <br></br>
+    <BiLogoJava size='5rem' className="rotate-icon" style={{ color: 'orange' }} />
+    <BiLogoFigma size='5rem' className="rotate-icon" style={{ color: 'pink' }} />
+    <BiLogoPython size='5rem' className="rotate-icon" style={{ color: 'teal' }} />
+    <FaGitAlt size='5rem' className="rotate-icon" style={{ color: 'gray' }} />
+    <BiLogoCPlusPlus size='5rem' className="rotate-icon" style={{ color: 'teal' }} />
+  </li>
+</ul>
 
-            </li>
-            
-            </ul>
+
         </div>
     
     </section>
