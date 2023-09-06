@@ -172,7 +172,75 @@ a {
     color: #007; /* Change the color to your desired hover color */
     /* You can also add other styles like background-color, border, etc. */
   }
-
+  .nav_toggler {
+    display: none; /* Hide the button by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .nav_toggler.toggle {
+    display: flex; /* Show the button when active */
+  }
+  
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Animation for the hamburger button lines when active */
+  .nav_toggler.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .nav_toggler.toggle .line2 {
+    opacity: 0;
+  }
+  
+  .nav_toggler.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Styling for the active navigation menu */
+  .nav__active {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .nav__menu {
+      display: none; /* Hide the menu on smaller screens */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+    }
+  
+    .nav__active {
+      transform: translateY(0); /* Slide in from the top when active */
+    }
+  
+    .nav__link {
+      font-size: 1.5rem;
+    }
+  
+    .nav_toggler {
+      display: flex; /* Show the button on smaller screens */
+    }
+  }
   
   
   

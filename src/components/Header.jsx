@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import {FaHome, FaAddressBook, FaBuffer } from "react-icons/fa";
-import {BsPersonCircle  } from "react-icons/bs";
+import { FaHome, FaAddressBook, FaBuffer } from "react-icons/fa";
+import { BsPersonCircle } from "react-icons/bs";
 import './Hearder.css';
-
-
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
   const [toggleIcon, setToggleIcon] = useState(false);
-  const [currentPage, setCurrentPage] = useState('Home'); // Initialize with the default active page (e.g., 'Home')
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const navToggle = () => {
     setActive(!active);
@@ -17,7 +15,7 @@ const NavBar = () => {
 
   const handleNavLinkClick = (page) => {
     setCurrentPage(page);
-    setActive(false); // Close the navigation menu when a link is clicked
+    setActive(false);
     setToggleIcon(false);
   };
 
@@ -37,7 +35,8 @@ const NavBar = () => {
             href="#home"
             className={`nav__link ${currentPage === 'Home' ? 'active' : ''}`}
             onClick={() => handleNavLinkClick('Home')}
-          ><FaHome size='1.5rem' />
+          >
+            <FaHome size='1.5rem' />
             Home
           </a>
         </li>
@@ -45,26 +44,29 @@ const NavBar = () => {
           <a
             href="#a"
             className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('a')}
-          ><BsPersonCircle size='1.5rem' />
-             About
+            onClick={() => handleNavLinkClick('About')}
+          >
+            <BsPersonCircle size='1.5rem' />
+            About
           </a>
         </li>
         <li className="nav__item">
           <a
             href="#projects"
             className={`nav__link ${currentPage === 'Projects' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('projects')}
-          > <FaBuffer  size='1.5rem'/> <span>Projects</span>
+            onClick={() => handleNavLinkClick('Projects')}
+          >
+            <FaBuffer size='1.5rem' />
+            <span>Projects</span>
           </a>
-           
         </li>
         <li className="nav__item">
           <a
             href="#co"
             className={`nav__link ${currentPage === 'Contact' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('co')}
-          ><FaAddressBook size='1.5rem'/>
+            onClick={() => handleNavLinkClick('Contact')}
+          >
+            <FaAddressBook size='1.5rem' />
             Contacts
           </a>
         </li>
@@ -74,6 +76,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
 

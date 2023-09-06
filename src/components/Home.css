@@ -178,6 +178,7 @@
   object-fit: cover;
   z-index: -1; /* To place it behind other content */
 }
-
-
-
+@media (min-width: 768px) {
+  .home__title {
+    font-size: 36px;
+  }
