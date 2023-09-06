@@ -32,7 +32,7 @@ const Projects = () => {
         <div className='description'>
           <h2>TaxCalculater</h2>
           <p></p>
-          <a href=''><button>View Code</button></a>
+          <a href='https://github.com/Ntampul/taxCalculater'><button>View Code</button></a>
         </div>
       </div>
     </div>

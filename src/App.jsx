@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css'; // You can create this CSS file for styling
 
+
 function App() {
   return (
     <div className="app">

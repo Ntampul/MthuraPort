@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <nav className={`nav ${active ? 'nav__active' : ''}`}>
       <a href="#co" className="nav__brand">
-        Ntampula Mthunzi
+        M.Ntampula
       </a>
       <div onClick={navToggle} className={toggleIcon ? 'nav_toggler toggle' : 'nav_toggler'}>
         <div className="line1"></div>
@@ -50,6 +50,7 @@ const NavBar = () => {
             About
           </a>
         </li>
+        
         <li className="nav__item">
           <a
             href="#projects"
@@ -60,6 +61,7 @@ const NavBar = () => {
             <span>Projects</span>
           </a>
         </li>
+        
         <li className="nav__item">
           <a
             href="#co"

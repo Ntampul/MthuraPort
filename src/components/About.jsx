@@ -14,14 +14,13 @@ const About = () => {
       Lifelong learner and problem solver, always seeking new challenges and opportunities to grow.
     </p>
     <h4 className="skills">MYSKILLS</h4>
-
     <ul className="Skills_Icon">
   <li>
     <FaCss3Alt size='5rem' className="rotate-icon" style={{ color: 'red' }} />  
     <FaCss3 size='5rem' className="rotate-icon" style={{ color: 'blue' }} /> 
     <BiLogoJavascript size='5rem' className="rotate-icon" style={{ color: 'green' }} />
     <FaReact size='5rem' className="rotate-icon" style={{ color: 'purple' }} />
-    < BiLogoPhp size='5rem' className="rotate-icon" style={{ color: 'purple' }} />
+    < BiLogoPhp size='5rem' className="rotate-icon" style={{ color: 'white' }} />
     <BiLogoAngular  size='5rem' className="rotate-icon" style={{ color: 'Yellow' }} />
     <br></br>
     <BiLogoJava size='5rem' className="rotate-icon" style={{ color: 'orange' }} />

@@ -1,6 +1,4 @@
-
-import React, { useRef } from 'react';
-import { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contacts.css';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { BiLogoGoogle } from 'react-icons/bi';
@@ -9,26 +7,11 @@ import emailjs from '@emailjs/browser';
 const Contacts = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log(message);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
+  const [messageSent, setMessageSent] = useState(false); // State for showing message sent popup
 
   const validateForm = () => {
     const newErrors = {};
@@ -47,20 +30,38 @@ const Contacts = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageSent(true); // Set messageSent to true after successful submission
+          // Clear form fields
+          setName('');
+          setEmail('');
+          setMessage('');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
-      // Here, you can perform actions like sending the form data to a server
-      // using APIs or displaying a success message.
-      console.log('Form submitted:', { name, email, message });
+      sendEmail(e);
     }
   };
 
   return (
     <div className="container" id="co">
       <h3 className="Conta"> Get in Touch..... </h3>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -95,28 +96,29 @@ const Contacts = () => {
         </div>
         <button type="submit">Send</button>
       </form>
+      
+      {messageSent && <div className="popup">Message sent</div>} {/* Show popup when messageSent is true */}
+      
       <div className="Rabali">
-  <a href="https://github.com/Ntampul">
-    <FaGithub size="3rem" color="white" class="social-icon" />
-  </a>
-
-  <a href="https://mail.google.com/mail/u/0/#inbox">
-    <BiLogoGoogle size="3rem" color="white" class="social-icon" />
-  </a>
-  <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
-    <FaLinkedin size="3rem" color="white" class="social-icon" />
-  </a>
-  <a href="https://www.instagram.com/bhut_mthunz/">
-    <FaInstagram size="3rem" color="white" class="social-icon" />
-  </a>
-</div>
-
-        <div class="copyright">
-            &copy; 2023 Mthunzi Ntampula. All rights reserved.
-        </div>
-        
+        <a href="https://github.com/Ntampul">
+          <FaGithub size="3rem" color="white" class="social-icon" />
+        </a>
+  
+        <a href="https://mail.google.com/mail/u/0/#inbox">
+          <BiLogoGoogle size="3rem" color="white" class="social-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
+          <FaLinkedin size="3rem" color="white" class="social-icon" />
+        </a>
+        <a href="https://www.instagram.com/bhut_mthunz/">
+          <FaInstagram size="3rem" color="white" class="social-icon" />
+        </a>
       </div>
-
+  
+      <div className="copyright">
+        &copy; 2023 Mthunzi Ntampula. All rights reserved.
+      </div>
+    </div>
   );
 };
 

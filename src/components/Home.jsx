@@ -2,6 +2,7 @@
 //import Typed from 'typed.js';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa6';
 import './Home.css'
+import CV from '../assets/mthunzi.pdf'
 
 
 
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
         <div className="home__image">
           <img src="https://i.ibb.co/3SVW3Ch/Whats-App-Image-2023-08-21-at-14-23-34.jpg"alt="home-image" />
-         <div className="cv"> <a href="https://pdf.ac/1P68X8" className="btn">Download CV</a></div>
+         <div className="cv"> <a href={CV} target='_blank' className="btn">My Resume</a></div>
         </div>
       </section>
   );
