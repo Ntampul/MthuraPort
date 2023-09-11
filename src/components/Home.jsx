@@ -29,7 +29,7 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/" className="social-media__link animated">
                 <FaLinkedin className="icon" /> <br></br>
               </a>
-              <a href="" className="social-media__link animated">
+              <a href="https://dribbble.com/account/profile" className="social-media__link animated">
                 <AiFillDribbbleCircle className="icon" /><br></br>
               </a>
               <a href="https://www.instagram.com/bhut_mthunz/" className="social-media__link animated">

@@ -70,6 +70,7 @@ const Contacts = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            placeholder="Enter Your Name"
           />
           {errors.name && <p className="error">{errors.name}</p>}
         </div>
@@ -78,9 +79,12 @@ const Contacts = () => {
           <input
             type="email"
             id="email"
+            
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Enter Your Email"
+            
           />
           {errors.email && <p className="error">{errors.email}</p>}
         </div>
@@ -91,13 +95,14 @@ const Contacts = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            placeholder="MESSAGE..."
           />
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
         <button type="submit">Send</button>
       </form>
       
-      {messageSent && <div className="popup">Message sent</div>} {/* Show popup when messageSent is true */}
+      {messageSent && <div className="popup">Message Sent</div>} {/* Show popup when messageSent is true */}
       
       <div className="Rabali">
         <a href="https://github.com/Ntampul">

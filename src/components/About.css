@@ -13,8 +13,6 @@
 }
 
 .Skills_Icon {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 600px; /* Set a fixed max-width for the container */
@@ -51,4 +49,10 @@
     font-size: 2rem; /* Decrease icon size for iPhone SE */
   }
   /* Adjust other styles as needed */
+}
+.Skills_Icon {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the icons horizontally */
+  flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
+  gap: 10px; /* Add some spacing between icons */
 }
