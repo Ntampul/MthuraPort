@@ -1,6 +1,7 @@
 //import { useEffect } from 'react';
 //import Typed from 'typed.js';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa6';
+import {AiFillDribbbleCircle  } from "react-icons/ai";
 import './Home.css'
 import CV from '../assets/mthunzi.pdf'
 
@@ -28,8 +29,8 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/" className="social-media__link animated">
                 <FaLinkedin className="icon" /> <br></br>
               </a>
-              <a href="https://web.facebook.com/profile.php?id=100063655705791" className="social-media__link animated">
-                <FaFacebook className="icon" /><br></br>
+              <a href="" className="social-media__link animated">
+                <AiFillDribbbleCircle className="icon" /><br></br>
               </a>
               <a href="https://www.instagram.com/bhut_mthunz/" className="social-media__link animated">
                 <FaInstagram className="icon" /><br></br>

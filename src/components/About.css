@@ -8,8 +8,24 @@
   }
  /* Default styles */
 .about__content {
-  padding: 20px;
+  padding: 10px;
   /* Add any other default styles */
+}
+
+.Skills_Icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px; /* Set a fixed max-width for the container */
+  margin: 0 auto; /* C
+}
+
+.Skills_Icon li {
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+  flex: 1 0 calc(20% - 20px); /* Adjust the width of each icon to fit within the container */
 }
 
 /* Media query for screens smaller than 768px (e.g., mobile devices) */
