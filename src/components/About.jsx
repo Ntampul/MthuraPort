@@ -5,7 +5,7 @@ import {BsFiletypeSql  } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="about__content"id="a"> 
+    <div className="about__content"id="about"> 
     <section className="page-section about" >
       
         <h3 className="about__sub-title">Junior Software Developer</h3>

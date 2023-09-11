@@ -174,4 +174,51 @@
   .home__title {
     font-size: 36px;
   }
+  /* Home.css */
+
+/* Default styles for larger screens */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.home__content {
+  flex: 1;
+}
+
+.home__description {
+  text-align: center;
+  margin: 20px;
+}
+
+.home__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cv {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home__content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .home__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
   

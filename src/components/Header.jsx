@@ -42,7 +42,7 @@ const NavBar = () => {
         </li>
         <li className="nav__item">
           <a
-            href="#a"
+            href="#about"
             className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
             onClick={() => handleNavLinkClick('About')}
           >

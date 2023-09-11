@@ -6,5 +6,33 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  
-  
+ /* Default styles */
+.about__content {
+  padding: 20px;
+  /* Add any other default styles */
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .about__content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+  .about__sub-title {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
+  /* Adjust other styles as needed */
+}
+
+/* Media query for iPhone SE (320px) */
+@media (max-width: 320px) {
+  .about__content {
+    padding: 5px; /* Further reduce padding for iPhone SE */
+  }
+  .about__sub-title {
+    font-size: 20px; /* Decrease font size for iPhone SE */
+  }
+  .rotate-icon {
+    font-size: 2rem; /* Decrease icon size for iPhone SE */
+  }
+  /* Adjust other styles as needed */
+}
