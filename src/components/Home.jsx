@@ -1,9 +1,11 @@
 //import { useEffect } from 'react';
 //import Typed from 'typed.js';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa6';
 import {AiFillDribbbleCircle  } from "react-icons/ai";
 import './Home.css'
 import CV from '../assets/mthunzi.pdf'
+import Wall from '../assets/port.jpeg'
+
 
 
 
@@ -12,8 +14,9 @@ const Home = () => {
 
 
   return (
-
+<div className="wallpaper" style={{ backgroundImage: `url(${Wall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center center' }}>
       <section className="page-section home" id="home">
+
         <div className="home__content rain">
           <div className="home__content">
             <h2 className="home__title"></h2>
@@ -48,7 +51,9 @@ const Home = () => {
           <img src="https://i.ibb.co/3SVW3Ch/Whats-App-Image-2023-08-21-at-14-23-34.jpg"alt="home-image" />
          <div className="cv"> <a href={CV} target='_blank' className="btn">My Resume</a></div>
         </div>
+        
       </section>
+      </div>
   );
 };
 

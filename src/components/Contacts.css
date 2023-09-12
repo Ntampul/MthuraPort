@@ -8,11 +8,11 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0px 2px 4px #0000001a;
-    transform: translate(0%,150%)  ;
-    -webkit-transform: translate(0%,150%)  ;
-    -moz-transform: translate(0%,150%)  ;
-    -ms-transform: translate(0%,150%)  ;
-    -o-transform: translate(0%,150%)  ;
+    transform: translate(0%,10%)  ;
+    -webkit-transform: translate(0%,10%)  ;
+    -moz-transform: translate(0%,10%)  ;
+    -ms-transform: translate(0%,10%)  ;
+    -o-transform: translate(0%,10%)  ;
 }
   
   .form-group {

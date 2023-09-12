@@ -10,7 +10,7 @@
 
 .home {
   position: absolute;
-  /* top: 150px; */
+   top: 150px; 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -220,5 +220,10 @@
     margin-top: 20px;
   }
 }
-
+.wallpaper{
   
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  height: 90vh; /* Set the height to the viewport height */
+}

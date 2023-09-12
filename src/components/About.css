@@ -46,7 +46,7 @@
     font-size: 20px; /* Decrease font size for iPhone SE */
   }
   .rotate-icon {
-    font-size: 2rem; /* Decrease icon size for iPhone SE */
+    font-size: 1rem; /* Decrease icon size for iPhone SE */
   }
   /* Adjust other styles as needed */
 }

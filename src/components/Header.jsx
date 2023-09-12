@@ -40,10 +40,11 @@ const NavBar = () => {
             Home
           </a>
         </li>
+
         <li className="nav__item">
           <a
-            href="#about"
-            className={`nav__link ${currentPage === 'About' ? 'active' : ''}`}
+            href="#Mthunzi"
+            className={`nav__link ${currentPage === 'Project' ? 'active' : ''}`}
             onClick={() => handleNavLinkClick('About')}
           >
             <BsPersonCircle size='1.5rem' />

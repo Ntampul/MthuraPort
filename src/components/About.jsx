@@ -18,10 +18,12 @@ import { BsFiletypeSql } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="about__content" id="about">
+    
+    <div className="about__content" id="Mthunzi">
       <section className="page-section about">
         <h3 className="about__sub-title">Junior Software Developer</h3>
         <p className="descr">
+          
           As a Junior Software Developer, I am enthusiastic and committed to
           honing my skills to deliver high-quality and efficient software
           applications. I specialize in front-end and back-end development,
