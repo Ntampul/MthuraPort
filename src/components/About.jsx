@@ -94,6 +94,29 @@ const About = () => {
             style={{ color: "" }}
           />
         </div>
+      
+       <section class="col">
+    
+                 <div class="contents">
+       
+               <div class="box">
+                   <h4>2017 - 2020</h4>
+                   <h3>BSc Computer Science & Mathematics</h3>
+                   
+                   <p><strong>Institution :</strong> Walter Sisulu University.</p>
+               </div>
+               <div class="box">
+                   <h4>2012 - 2016</h4>
+                   <h3>High School </h3>
+                   
+                   <p><strong>School :</strong> Carl Malcomess High</p>
+               </div>
+           </div>
+       
+     
+       
+       </section>
+       
       </section>
     </div>
   );

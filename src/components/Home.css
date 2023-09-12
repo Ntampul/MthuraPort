@@ -68,12 +68,16 @@
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .home__description {
   margin-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 70px;
   color: white;
 
 }
@@ -91,6 +95,10 @@
   -moz-transform: translateX(90px);
   -ms-transform: translateX(90px);
   -o-transform: translateX(90px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .home__content,
@@ -225,5 +233,5 @@
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
-  height: 90vh; /* Set the height to the viewport height */
+  height: 100vh; /* Set the height to the viewport height */
 }
