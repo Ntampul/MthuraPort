@@ -135,3 +135,42 @@
         -o-transform: translate(0%,100%) ;
         transform: translate(0%,100%) ;
 }
+
+@media screen and (max-width: 480px) {
+  .about__content {
+    padding: 5px;
+  }
+
+  .about__sub-title {
+    font-size: 1.2rem;
+  }
+
+  .descr {
+    font-size: 0.9rem;
+  }
+
+  .skills {
+    font-size: 1rem;
+  }
+
+  .Skills_Icon {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(100% - 20px); /* Full width with a smaller margin */
+  }
+}
+
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .box {
+    width: calc(100% - 20px); /* Full width with a smaller margin */
+    padding: 10px;
+  }
+}
+
+
+

@@ -96,7 +96,7 @@ const About = () => {
         </div>
       
        <section class="col">
-    
+        
                  <div class="contents">
        
                <div class="box">
