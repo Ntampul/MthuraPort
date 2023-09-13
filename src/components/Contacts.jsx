@@ -38,7 +38,8 @@ const Contacts = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setMessageSent(true); // Set messageSent to true after successful submission
+          setMessageSent(true); 
+       
           // Clear form fields
           setName('');
           setEmail('');
@@ -62,6 +63,7 @@ const Contacts = () => {
     <div className="containerr" id="co">
       <h3 className="Conta"> Get in Touch..... </h3>
       <form ref={form} onSubmit={handleSubmit}>
+
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -102,7 +104,7 @@ const Contacts = () => {
         <button type="submit">Send</button>
       </form>
       
-      {messageSent && <div className="popup">Message Sent</div>} {/* Show popup when messageSent is true */}
+      {messageSent && <div className="popup">Message Sent</div>} 
       
       <div className="Rabali">
         <a href="https://github.com/Ntampul">

@@ -9,7 +9,7 @@
 }
 
 .home {
-  position: absolute;
+ 
    top: 150px; 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -90,11 +90,11 @@
   width: 100%;
   border-radius: 50%;
   float: left;
-  transform: translateX(90px);
-  -webkit-transform: translateX(90px);
-  -moz-transform: translateX(90px);
-  -ms-transform: translateX(90px);
-  -o-transform: translateX(90px);
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  -o-transform: translateX(30px);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -229,9 +229,21 @@
   }
 }
 .wallpaper{
-  
+  /* background-image: url("../assets/mthura.png"); */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
-  height: 100vh; /* Set the height to the viewport height */
+    height: 100vh; /* Set the height of the background container to fill the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:500px){
+  #home{
+    flex-direction: column;
+    justify-content: center;
+  }
 }

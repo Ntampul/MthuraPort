@@ -1,86 +1,55 @@
-import React, { useState } from 'react';
-import { FaHome, FaAddressBook, FaBuffer } from "react-icons/fa";
-import { BsPersonCircle } from "react-icons/bs";
+import { useState, useEffect, } from 'react';
 import './Hearder.css';
+//import menu from './menu.jpg';
+import open_menu from './navbar.js';
+import {IoReorderThreeSharp} from 'react-icons/io5'
+//fixed flex justify-between bg-transparent
+export default function Header() {
+//console.log('navbar is revcieving about page:', myAboutIsVisible)
 
-const NavBar = () => {
-  const [active, setActive] = useState(false);
-  const [toggleIcon, setToggleIcon] = useState(false);
-  const [currentPage, setCurrentPage] = useState('Home');
+const [headerId, setHeaderId] = useState('header');
 
-  const navToggle = () => {
-    setActive(!active);
-    setToggleIcon(!toggleIcon);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setHeaderId('header1');
+    } else {
+      setHeaderId('header');
+    }
   };
 
-  const handleNavLinkClick = (page) => {
-    setCurrentPage(page);
-    setActive(false);
-    setToggleIcon(false);
-  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  //{aboutMeContent${myAboutIsVisible ? "-active":""}}
+
 
   return (
-    <nav className={`nav ${active ? 'nav__active' : ''}`}>
-      <a href="#co" className="nav__brand">
-        M.Ntampula
-      </a>
-      <div onClick={navToggle} className={toggleIcon ? 'nav_toggler toggle' : 'nav_toggler'}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
-      </div>
-      <ul className="nav__menu">
-        <li className="nav__item">
-          <a
-            href="#home"
-            className={`nav__link ${currentPage === 'Home' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('Home')}
-          >
-            <FaHome size='1.5rem' />
-            Home
-          </a>
-        </li>
-
-        <li className="nav__item">
-          <a
-            href="#Mthunzi"
-            className={`nav__link ${currentPage === 'Project' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('About')}
-          >
-            <BsPersonCircle size='1.5rem' />
-            About
-          </a>
-        </li>
-     
-        <li className="nav__item">
-          <a
-            href="#projects"
-            className={`nav__link ${currentPage === 'Projects' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('Projects')}
-          >
-            <FaBuffer size='1.5rem' />
-            <span>Projects</span>
-          </a>
-        </li>
-        
-        <li className="nav__item">
-          <a
-            href="#co"
-            className={`nav__link ${currentPage === 'Contact' ? 'active' : ''}`}
-            onClick={() => handleNavLinkClick('Contact')}
-          >
-            <FaAddressBook size='1.5rem' />
-            Contacts
-          </a>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-
-export default NavBar;
+    <>
+      <section id='header-section'>
+        <nav>
+          <div id={headerId} className='w-screen'>
+            <div className="logo">
+              <a href="#" className="logo"></a>
+            </div>
 
 
+              <div className="navlist">
+                  <a href="#home"> Home</a>
+                  <a href="#Mthunzi">About</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#co">Contact</a>
+              </div>
 
 
-
+            <div className="" id='nav-icon' onClick={open_menu}>
+              <IoReorderThreeSharp size="50" />
+            </div>
+          </div>
+        </nav>
+      </section>
+    </>
+  )
+}

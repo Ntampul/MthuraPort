@@ -2,17 +2,21 @@
 
 .containerr {
     max-width: 1000px;
-    margin: 10px auto;
-    padding: 35px;
+    margin: 40px auto;
+    padding: 30px;
     margin-bottom: 25px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0px 2px 4px #0000001a;
     transform: translate(0%,10%)  ;
-    -webkit-transform: translate(0%,100%)  ;
+    -webkit-transform: translate(0%,10%)  ;
     -moz-transform: translate(0%,10%)  ;
     -ms-transform: translate(0%,10%)  ;
     -o-transform: translate(0%,10%)  ;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
   
   .form-group {

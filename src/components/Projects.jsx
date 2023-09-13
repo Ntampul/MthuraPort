@@ -1,15 +1,13 @@
-//import React from 'react';
-
-import web from '../assets/MZAMOMTSHA.png'; // Import your image files
+import React from 'react';
+import web from '../assets/MZAMOMTSHA.png';
 import Calc from '../assets/TaxCalc.jpg';
 import bank from '../assets/BANK.jpg';
 import './Projects.css';
 
 const Projects = () => {
   return (
-    
-    <div className='my-work'id="projects">
-        <h3 className="Proj">My Projects</h3>
+    <div className='my-work' id="projects">
+      <h3 className="Proj">My Projects</h3>
       <div className='description-icons'>
         <div className='project-image'><img src={web} alt='School Website' /></div>
         <div className='description'>
@@ -29,9 +27,9 @@ const Projects = () => {
       </div>
 
       <div className='description-icons'>
-        <div className='project-image'><img src={Calc} alt=' TaxCalculater' /></div>
+        <div className='project-image'><img src={Calc} alt='Tax Calculator' /></div>
         <div className='description'>
-          <h2>TaxCalculater</h2>
+          <h2>Tax Calculator</h2>
           <p></p>
           <a href='https://github.com/Ntampul/taxCalculater'><button>View Code</button></a>
         </div>

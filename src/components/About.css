@@ -158,17 +158,13 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .box {
-    width: calc(100% - 20px); /* Full width with a smaller margin */
-  }
-}
 
-/* Media query for even smaller screens (e.g., mobile phones) */
+
+
 @media screen and (max-width: 480px) {
   .box {
-    width: calc(100% - 20px); /* Full width with a smaller margin */
-    padding: 10px;
+    width: calc(100% - 20px); 
+    padding: 50px;
   }
 }
 
