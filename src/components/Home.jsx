@@ -35,9 +35,9 @@ const Home = () => {
               <a href="https://dribbble.com/account/profile" className="social-media__link animated">
                 <AiFillDribbbleCircle className="icon" /><br></br>
               </a>
-              <a href="https://www.instagram.com/bhut_mthunz/" className="social-media__link animated">
+              {/* <a href="https://www.instagram.com/bhut_mthunz/" className="social-media__link animated">
                 <FaInstagram className="icon" /><br></br>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

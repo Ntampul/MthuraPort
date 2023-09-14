@@ -218,8 +218,8 @@ align-items: center;
     }
 
     .home__content {
-      text-align: center;
-      margin-bottom: 20px;
+      /* text-align: center;
+      margin-bottom: 10px; */
     }
 
     .home__social {
@@ -264,3 +264,118 @@ align-items: center;
   color: blue;
   /* Change the color to your desired color */
 }
+
+/* Default styles for larger screens */
+
+/* Adjust font sizes, margins, padding, or other styles as needed for smaller screens */
+/* Default styles for larger screens */
+
+/* Adjust font sizes, margins, padding, or other styles as needed for smaller screens */
+@media screen and (max-width: 414px) {
+  .home__content {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .home__name {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .home__description {
+    font-size: 1px;
+    margin-bottom: 1px;
+  }
+
+  .home__image img {
+    max-width: 70%;
+  }
+
+  .cv {
+    margin-top: 10px;
+    width: 70%; /* Ensure the button takes up the full width of the screen */
+    text-align: center; /* Center the button horizontally */
+  }
+
+  .social-media__link {
+    font-size: 20px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* Default styles for larger screens */
+
+/* Adjust font sizes, margins, padding, or other styles as needed for smaller screens */
+@media screen and (max-width: 414px) {
+  .home__content {
+    padding: 20px;
+  }
+
+  .home__name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .home__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .home__image {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .home__image img {
+    max-width: 70%;
+  }
+
+  .cv {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .social-media__link {
+    font-size: 20px;
+    margin-right: 15px;
+    display: inline-block;
+  }
+}
+
+/* Additional styles for iPhone SE or similar small screens */
+@media screen and (max-width: 320px) {
+  .home__name {
+    font-size: 22px; /* Further reduce font size for iPhone SE */
+  }
+
+  .home__description {
+    font-size: 2px; /* Further reduce font size for iPhone SE */
+  }
+
+  .home__image {
+    margin-top: 20px; /* Reduce top margin further for iPhone SE */
+  }
+
+  .cv {
+    margin-top: 3px; /* Reduce top margin further for iPhone SE */
+    width: 50%;
+    text-align: center;
+    
+
+  }
+
+  .social-media__link {
+    font-size: 10px; /* Reduce font size for social media links on iPhone SE */
+    margin-right: 5px; /* Reduce margin for social media links on iPhone SE */
+    text-align: center;
+  }
+}
+
+
