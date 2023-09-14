@@ -59,85 +59,14 @@ html,
   /* --Header-- */
   
   /* Add this media query for responsiveness */
-@media (max-width: 768px) {
-	.header {
-	  padding: 1rem 5%;
-	}
-  
-	.header__content {
-	  flex-direction: column;
-	  align-items: center;
-	}
-  
-	.header__logo {
-	  width: 80px; /* Adjust the width as needed */
-	  margin: 0; /* Remove margin */
-	}
-  
-	.menu__list {
-	  margin-top: 1rem;
-	  display: flex;
-	  justify-content: space-around;
-	  width: 100%;
-	}
-  
-	.menu__list > li {
-	  margin: 0;
-	}
-  }
-  
-  /* --Header-- */
-/* --Header-- */
 
-/* --Header-- */
-
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 2rem 9%;
-	background-color: var(--main-color);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 10;
-  }
-  
-  .header__content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-  }
-  
-  .header__logo-container {
-	flex: 0 0 auto;
-	display: flex;
-	align-items: center;
-  }
-  
-  .header__logo {
-	width: 50px;
-	height: auto;
-	display: block;
-	margin-right: 1rem;
-	cursor: pointer;
-	transition: transform 0.3s ease;
-  }
   
   /* Adjust the position of the h2 element */
   .home__title {
 	margin-left: 1rem; /* Add margin to create spacing between the logo and the h2 element */
   }
   
-  
-  .header__logo:hover {
-	transform: scale(1.1);
-  }
-  
-  .header__menu {}
-  
+ 
   /* --Nav menu-- */
   
   .menu {}
@@ -172,7 +101,7 @@ html,
   /* --General-- */
   
   .page-section {
-	min-height: 100vh;
+	min-height: 90vh;
 	padding: 10rem 9% 5rem;
 
   }
@@ -189,14 +118,14 @@ html,
   
   .btn {
 	display: inline-block;
-	padding: 1rem 2.8rem;
+	padding: 1rem 2.rem;
 	background-color: var(--main-color);
 	border-radius: 4rem;
 	box-shadow: var(--box-shadow);
 	font-size: 1.6rem;
 	color: var(--second-bg-color);
 	letter-spacing: 0.1rem;
-	font-weight: 600;
+	font-weight: 400;
 	cursor: pointer;
 	display: flex;
 
