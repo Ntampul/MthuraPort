@@ -20,8 +20,7 @@
 	text-decoration: none;
   }
   
-  ul,
-  ol,
+  ul, ol,
   li {
 	list-style: none;
   }
@@ -116,30 +115,7 @@ html,
 	font-size: 4.5rem;
   }
   
-  .btn {
-	display: inline-block;
-	padding: 1rem 2.rem;
-	background-color: var(--main-color);
-	border-radius: 4rem;
-	box-shadow: var(--box-shadow);
-	font-size: 1.6rem;
-	color: var(--second-bg-color);
-	letter-spacing: 0.1rem;
-	font-weight: 400;
-	cursor: pointer;
-	display: flex;
 
-	align-items: center;
-	-webkit-border-radius: 2rem;
-	-moz-border-radius: 2rem;
-	-ms-border-radius: 2rem;
-	-o-border-radius: 2rem;
-}
-  
-  .btn:hover {
-	box-shadow: none;
-  }
-  
   /* --Home-- */
 
 

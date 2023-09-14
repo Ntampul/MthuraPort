@@ -1,6 +1,6 @@
 .my-work {
     display: flex;
-    height: 100vh;
+    height: 10h;
     width: 100vw;
     font-size: 30px;
     flex-direction: column;
@@ -17,6 +17,7 @@
 .Proj{
    
     text-align: center;
+    padding: 5px;
 }
   
   .description-icons {
