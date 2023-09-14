@@ -1,6 +1,8 @@
 .rotate-icon {
-    animation: spin 2s linear infinite; /* You can adjust the duration and other properties as needed */
-  }
+    animation: spin 4s linear infinite;
+    /*Youcanadjustthedurationandotherpropertiesasneeded*/:;
+    -webkit-animation: spin 4s linear infinite;
+}
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
