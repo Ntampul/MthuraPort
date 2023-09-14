@@ -1,6 +1,9 @@
 import { useState, useEffect, } from 'react';
 import './Hearder.css';
 //import menu from './menu.jpg';
+import { FaHome } from "react-icons/fa";
+import {  AiOutlineUserAdd,  AiFillContacts} from "react-icons/ai";
+import { BiLayer } from "react-icons/bi";
 import open_menu from './navbar.js';
 import {IoReorderThreeSharp} from 'react-icons/io5'
 //fixed flex justify-between bg-transparent
@@ -37,10 +40,10 @@ const [headerId, setHeaderId] = useState('header');
 
 
               <div className="navlist">
-                  <a href="#home"> Home</a>
-                  <a href="#Mthunzi">About</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#co">Contact</a>
+                  <a href="#home"><FaHome /> Home</a> 
+                  <a href="#Mthunzi"><AiOutlineUserAdd /> About</a>
+                  <a href="#projects"><BiLayer />Projects</a>
+                  <a href="#co"><AiFillContacts />Contact</a>
               </div>
 
 
