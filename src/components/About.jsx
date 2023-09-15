@@ -99,13 +99,13 @@ const About = () => {
                  <div class="contents">
        
                <div class="box">
-                   <h4>2017 - 2020</h4>
+                   <h4>2016 - 2022</h4>
                    <h3>BSc Computer Science & Mathematics</h3>
                    
                    <p><strong>Institution :</strong> Walter Sisulu University.</p>
                </div>
                <div class="box">
-                   <h4>2012 - 2016</h4>
+                   <h4>2013 - 2015</h4>
                    <h3>High School </h3>
                    
                    <p><strong>School :</strong> Carl Malcomess High</p>
