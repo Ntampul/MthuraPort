@@ -14,6 +14,7 @@ const Home = () => {
 
 
   return (
+    
     <div className="wallpaper" style={{ backgroundImage: `url(${Wall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center center', width:'100vw'}}>
       <section className="page-section home" id="home">
 

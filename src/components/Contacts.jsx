@@ -3,8 +3,10 @@ import './Contacts.css';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { BiLogoGoogle } from 'react-icons/bi';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contacts = () => {
+  const onChange =() =>{}
   const form = useRef();
 
   const [name, setName] = useState('');
@@ -101,6 +103,10 @@ const Contacts = () => {
           />
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
+        <ReCAPTCHA
+    sitekey="6Lc86SgoAAAAAAgQdq7q_M8LiK5xh8c5eKvJ7yN1"
+    onChange={onChange}
+  />,
         <button type="submit">Send</button>
       </form>
       
@@ -130,12 +136,3 @@ const Contacts = () => {
 };
 
 export default Contacts;
-
-
-
-
-
-
-
-
-
