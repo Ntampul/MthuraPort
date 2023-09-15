@@ -44,7 +44,7 @@ html,
 	height: 100%;
 	font-size: 75%;
 	line-height: 1;
-	background-color: gray;
+	background-color: rgb(211, 199, 199);
 	color: var(--text-color);
 	background-image: url('/game.jpg');
 	/* font-family: "" */

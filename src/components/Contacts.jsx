@@ -39,7 +39,7 @@ const Contacts = () => {
       .sendForm('service_at1dpz9', 'template_v242dgn', form.current, 'n4CEAGAIxuOJMj7vF')
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           setMessageSent(true); 
        
           // Clear form fields

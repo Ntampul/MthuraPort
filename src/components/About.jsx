@@ -20,7 +20,7 @@ const About = () => {
   return (
     
     <div className="about__content" id="Mthunzi">
-      <section className="page-section about">
+      <section className="page-section about pad">
         <h3 className="about__sub-title">Junior Software Developer</h3>
         <p className="descr">
           As a Junior Software Developer, I am enthusiastic and committed to

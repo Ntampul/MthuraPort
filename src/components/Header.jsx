@@ -35,7 +35,7 @@ const [headerId, setHeaderId] = useState('header');
         <nav>
           <div id={headerId} className='w-screen'>
             <div className="logo">
-              <a href="#" className="logo"></a>
+              <a href="#" className="logo"> M.Ntampula</a>
             </div>
 
 
