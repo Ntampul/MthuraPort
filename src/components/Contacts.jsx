@@ -63,7 +63,7 @@ const Contacts = () => {
 
   return (
     <div className="containerr" id="co">
-      <h3 className="Conta"> Get in Touch..... </h3>
+      <h3 className="Conta paddd"> Get in Touch..... </h3>
       <form ref={form} onSubmit={handleSubmit}>
 
         <div>

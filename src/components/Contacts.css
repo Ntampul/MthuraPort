@@ -2,10 +2,8 @@
 
 .containerr {
     height: 10%;
-    max-width:800px;
+    max-width:750px;
     margin: 0 auto;
-  
-    
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 7px;
@@ -47,14 +45,18 @@
   }
   
   button {
-    background-color:  #19635A;;
+    background-color:  #19635A;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-  }
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
   .copyright{
     text-align: center;
     font-size: 15px;
@@ -96,5 +98,8 @@
   transform: scale(1.2); /* Increase the size on hover */
   color:  #19635A; /* Change the color on hover (you can use your desired color) */
   background-color:  #19635A;;
+}
+.paddd{
+  margin-top: 35%;
 }
 
