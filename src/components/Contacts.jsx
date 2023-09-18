@@ -75,6 +75,7 @@ const Contacts = () => {
             onChange={(e) => setName(e.target.value)}
             required
             placeholder="Enter Your Name"
+            name='name'
           />
           {errors.name && <p className="error">{errors.name}</p>}
         </div>
@@ -83,11 +84,13 @@ const Contacts = () => {
           <input
             type="email"
             id="email"
+            name='email'
             
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter Your Email"
+           
             
           />
           {errors.email && <p className="error">{errors.email}</p>}
@@ -100,13 +103,14 @@ const Contacts = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
             placeholder="MESSAGE..."
+            name='message'
           />
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
         <ReCAPTCHA
     sitekey="6Lc86SgoAAAAAAgQdq7q_M8LiK5xh8c5eKvJ7yN1"
     onChange={onChange}
-  />,
+  />
         <button type="submit">Send</button>
       </form>
       
