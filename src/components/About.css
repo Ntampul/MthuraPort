@@ -11,13 +11,18 @@
 
 .about__content {
   padding: 30px;
+ 
   transform: translateY(1%);
   -webkit-transform: translateY(1%);
   -moz-transform: translateY(1%);
   -ms-transform: translateY(1%);
   -o-transform: translateY(1%);
-   max-height: fit-content;
-   height: 10%;
+  max-height: fit-content;
+  height: 10%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .Skills_Icon {
