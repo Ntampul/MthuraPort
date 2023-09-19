@@ -63,9 +63,9 @@ const Contacts = () => {
 
   return (
     <div className="containerr" id="co">
+    
       <h3 className="Conta paddd"> Get in Touch..... </h3>
       <form ref={form} onSubmit={handleSubmit}>
-
         <div>
           <label htmlFor="name">Name:</label>
           <input

@@ -27,10 +27,11 @@
 
 .page-section.home {}
 
-/* .home__content {
+.home__content {
   padding: 40px;
   text-align: center;
-} */
+  margin-top: 1%;
+} 
 
 
 .social-media {
@@ -51,8 +52,8 @@
 
 
 .btn {
-  /* display: inline-block; */
-  width: 200px;
+   display: inline-block; 
+  width: 190px;
   padding: 1rem 2.8rem;
   /* margin-top: 5px; */
   background-color: var(--main-color);
@@ -82,7 +83,7 @@
 .home__image img {
   margin-bottom: 10px;
   width: 300px;
-  height: 400px;
+  height: 350px;
   border: #e5e5e5 solid 2px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -94,7 +95,7 @@
  flex-direction: column;
 align-items: center;
  border-radius: 50%;
- /* transform: translateX(30px);
+ transform: translateX(30px);
  transform: translateY(70px);
  -webkit-border-radius: 50%;
  -moz-border-radius: 50%;
@@ -103,7 +104,7 @@ align-items: center;
  -webkit-transform: translateY(70px);
  -moz-transform: translateY(70px);
  -ms-transform: translateY(70px);
- -o-transform: translateY(70px); */
+ -o-transform: translateY(70px); 
 }
 
 
@@ -221,8 +222,8 @@ align-items: center;
     }
 
     .home__content {
-      /* text-align: center;
-      margin-bottom: 10px; */
+       text-align: center;
+      margin-bottom: 10px; 
     }
 
     .home__social {
@@ -268,7 +269,7 @@ align-items: center;
 }
 
 .job {
-  color: blue;
+  color: black;
   /* Change the color to your desired color */
 }
 
@@ -367,6 +368,34 @@ align-items: center;
     font-size: 2px;
   }
 }
+/* Apply styles for screens up to the width of an iPhone SE */
+@media screen and (max-width: 320px) {
+  /* Adjust the font size and spacing for better readability on small screens */
+  .home__description p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    font-size: 10px;
+     /* Adjust icon size for smaller screens */
+  }
+
+  .name {
+    font-size: 20px; /* Adjust text size for smaller screens */
+  }
+
+  .job {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+
+  /* Adjust the image size for smaller screens */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
 
 

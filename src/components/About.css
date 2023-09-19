@@ -6,7 +6,7 @@
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
   }
 
 .about__content {
@@ -25,6 +25,8 @@
   align-items: center;
   max-width: 600px; /* Set a fixed max-width for the container */
   margin: 40 auto; 
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .Skills_Icon li {
@@ -40,7 +42,14 @@
     padding: 10px; /* Reduce padding for smaller screens */
   }
   .about__sub-title {
-    font-size: 24px; /* Decrease font size for smaller screens */
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  .descr{
+    margin-top: 7%;
+  }
+  .Skills_Icon{
+  
   }
   /* Adjust other styles as needed */
 }
