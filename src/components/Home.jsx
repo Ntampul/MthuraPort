@@ -43,7 +43,7 @@ const Home = () => {
           <p>
             Hi. i’M <span className="name">MTHUNZI NTAMPULA</span> <br />
             Welcome to my portfolio as I am looking for a job as a{' '}
-            <span className="job">software DEVELOPER</span>.
+            <span className="job">SOFTWARE DEVELOPER</span>.
           </p>
         </div>
 

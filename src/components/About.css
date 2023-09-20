@@ -30,14 +30,14 @@
   align-items: center;
   max-width: 600px; /* Set a fixed max-width for the container */
   margin: 40 auto; 
-  margin-top: 10%;
+ 
   margin-bottom: 10%;
 }
 
 .Skills_Icon li {
   list-style: none;
   text-align: center;
-  margin: 10px;
+  n
   flex: 1 0 calc(10% - 10px); /* Adjust the width of each icon to fit within the container */
 }
 
