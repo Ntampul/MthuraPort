@@ -10,8 +10,8 @@
   }
 
 .about__content {
-  padding: 10px;
- 
+  padding: 70px;
+  line-height: 1;
   transform: translateY(1%);
   -webkit-transform: translateY(1%);
   -moz-transform: translateY(1%);
@@ -28,10 +28,10 @@
 .Skills_Icon {
   justify-content: center;
   align-items: center;
-  max-width: 600px; /* Set a fixed max-width for the container */
+  max-width: 500px; /* Set a fixed max-width for the container */
   margin: 40 auto; 
- 
-  margin-bottom: 10%;
+ margin-top: 100%;
+  margin-bottom: 100%;
 }
 
 .Skills_Icon li {
