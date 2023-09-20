@@ -11,11 +11,11 @@
   justify-content: space-evenly; */
   /* align-items: center; */
   /* align-items: center; */
-  gap: 5rem;
-  padding-top: 70px;
-  padding-left: 100px;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-left: 10px;
 
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   top: 0;
 
@@ -178,9 +178,16 @@ align-items: center;
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .home__title {
     font-size: 36px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .home__content {
@@ -188,13 +195,16 @@ align-items: center;
   }
 
   .home__description {
+    /* display: flex; */
+    justify-content: center;
     text-align: center;
-    margin: 20px; 
+    font-size: 1.4rem;
+    /* margin: 20px;  */
   }
-
   .home__image img {
     /* max-width: 100%; */
     /* height: auto; */
+    margin: 0;
   }
 
   .social-media__link {
@@ -202,8 +212,8 @@ align-items: center;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background-color: transparent;
     border: 0.2rem solid white;
     border-radius: 50%;
@@ -216,8 +226,8 @@ align-items: center;
 
 
   /* Media query for smaller screens */
-  @media screen and (max-width: 768px) {
-    .home {
+  @media screen and (max-width: 550px) {
+    /* .home {
       flex-direction: column;
     }
 
@@ -230,7 +240,8 @@ align-items: center;
       display: flex;
       justify-content: center;
       margin-top: 1px;
-    }
+    } */
+
   }
 
   .wallpaper {
@@ -293,7 +304,7 @@ align-items: center;
   }
 
   .home__description {
-    font-size: 2px; /* Further reduce font size for iPhone SE */
+    font-size: 20px; /* Further reduce font size for iPhone SE */
   }
 
   .home__image {
@@ -309,9 +320,14 @@ align-items: center;
   }
 
   .social-media__link {
+    display: flex;
     font-size: 1px; /* Reduce font size for social media links on iPhone SE */
-   margin-top: 10%; /* Reduce margin for social media links on iPhone SE */
+   margin-top: 1%; /* Reduce margin for social media links on iPhone SE */
     text-align: center;
+    flex-direction: row row-reverse;
+
+    
+  
   }
 }
 /* Home.css */
@@ -352,7 +368,7 @@ align-items: center;
   /* Adjust styles for smaller screens here */
   .wallpaper {
     background-size: contain;
-    min-height: 100vh;
+    min-height: 10vh;
   }
 
   .social-media__link {
@@ -375,24 +391,38 @@ align-items: center;
     font-size: 16px;
     margin-bottom: 10px;
   }
-
   .icon {
     font-size: 10px;
      /* Adjust icon size for smaller screens */
   }
-
   .name {
     font-size: 20px; /* Adjust text size for smaller screens */
   }
-
   .job {
     font-size: 14px; /* Adjust text size for smaller screens */
   }
-
   /* Adjust the image size for smaller screens */
   .responsive-image {
     max-width: 100%;
     height: auto;
+  }
+}
+/* Media query for iPhone 5 */
+@media (max-width: 320px) {
+  .wallpaper {
+    background-size: contain;
+  }
+  .home__description {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .job {
+    font-size: 14px;
+  }
+  .home__image{
+    margin-top: 10%;
   }
 }
 

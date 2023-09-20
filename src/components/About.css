@@ -10,7 +10,7 @@
   }
 
 .about__content {
-  padding: 30px;
+  padding: 10px;
  
   transform: translateY(1%);
   -webkit-transform: translateY(1%);
@@ -106,7 +106,7 @@
        main.row{
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-column-gap:10px ;
+          grid-column-gap:0px ;
        }
        .col header.title{
           font-family: helvatica;

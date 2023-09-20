@@ -35,13 +35,7 @@ const Home = () => {
                 <FaLinkedin className="icon" />
                 <br />
               </a>
-              <a
-                href="https://dribbble.com/account/profile"
-                className="social-media__link animated"
-              >
-                <AiFillDribbbleCircle className="icon" />
-                <br />
-              </a>
+             
             </div>
           </div>
         </div>
