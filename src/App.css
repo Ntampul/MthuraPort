@@ -140,7 +140,7 @@ html,
   .home__content, .home__description {
 	display: flex;
 	font-size: 1.6rem;
-	line-height: 1.25;
+	line-height: 0.7;
 	display: flex;
     justify-content: center;
     align-items: center;

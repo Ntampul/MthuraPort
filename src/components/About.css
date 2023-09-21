@@ -37,7 +37,7 @@
 .Skills_Icon li {
   list-style: none;
   text-align: center;
-  n
+
   flex: 1 0 calc(10% - 10px); /* Adjust the width of each icon to fit within the container */
 }
 
@@ -49,6 +49,7 @@
   .about__sub-title {
     font-size: 20px;
     margin-top: 10%;
+    column-gap: 0px;
   }
   .descr{
     margin-top: 7%;
@@ -187,7 +188,7 @@
 }
 
   .skills {
-    font-size: 1rem;
+    font-size: 7rem;
   }
 
   .Skills_Icon {

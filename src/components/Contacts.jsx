@@ -62,8 +62,8 @@ const Contacts = () => {
   };
 
   return (
-    <div className="containerr paddd" id="co">
-    
+    <div className="paddd" id="co">
+    <div className='containerr'>
       <h3 className="Conta "> Get in Touch..... </h3>
       <form ref={form} onSubmit={handleSubmit}>
         <div>
@@ -135,7 +135,7 @@ const Contacts = () => {
       <div className="copyright">
         &copy; 2023 Mthunzi Ntampula. All rights reserved.
       </div>
-    </div>
+    </div></div>
   );
 };
 

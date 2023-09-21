@@ -1,11 +1,12 @@
 /* Contacts.css */
 
 .containerr {
-    height: 10%;
-    max-width:750px;
+  /* margin-top: 20%; */
+    height: 550px;
+    max-width:750px; 
     margin:  auto;
     border-collapse: collapse;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
      padding: 1px;
     border-radius: 7px;
@@ -69,6 +70,7 @@
   
   }
   .Conta{
+    margin-bottom: 10vh;
     text-align: center;
     font-size: 30px;
     transform:translate(0%,60%);
@@ -94,6 +96,8 @@
   background-color:  #19635A;;
 }
 .paddd{
-  margin-top: 40%;
+
+padding-top:10vh; 
+ height: 100vh;
 }
 

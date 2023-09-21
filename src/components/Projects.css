@@ -1,6 +1,6 @@
 .my-work {
     display: flex;
-    height: 10h;
+    height: 20h;
     padding: 4.4%;
     width: 100vw;
     font-size: 30px;
@@ -115,5 +115,5 @@
   height: auto;
 }
 .pad{
-  padding-top: 15px;
+  padding-top: 10px;
 }
