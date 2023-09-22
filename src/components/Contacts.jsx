@@ -96,7 +96,7 @@ const Contacts = () => {
           {errors.email && <p className="error">{errors.email}</p>}
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message"> Message:</label>
           <textarea
             id="message"
             value={message}
@@ -117,17 +117,17 @@ const Contacts = () => {
       {messageSent && <div className="popup">Message Sent</div>} 
       
       <div className="Rabali">
-        <a href="https://github.com/Ntampul">
+        <a href="https://github.com/Ntampul" target='_blank' rel="noreferrer">
           <FaGithub size="3rem" color="white" class="social-icon" />
         </a>
   
-        <a href="https://mail.google.com/mail/u/0/#inbox">
+        <a href="https://mail.google.com/mail/u/0/#inbox" target='_blank' rel="noreferrer">
           <BiLogoGoogle size="3rem" color="white" class="social-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/">
+        <a href="https://www.linkedin.com/in/mthunzi-ntampula-7b194522b/"target='_blank' rel="noreferrer" >
           <FaLinkedin size="3rem" color="white" class="social-icon" />
         </a>
-        <a href="https://www.instagram.com/bhut_mthunz/">
+        <a href="https://www.instagram.com/bhut_mthunz/"target='_blank' rel="noreferrer" >
           <FaInstagram size="3rem" color="white" class="social-icon" />
         </a>
       </div>

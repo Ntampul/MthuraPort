@@ -14,7 +14,7 @@ const Projects = () => {
           <h2>School Website</h2>
      
           <p></p>
-          <a href="https://symphonious-fudge-fafa73.netlify.app/"><button>View Web</button></a>
+          <a href="https://symphonious-fudge-fafa73.netlify.app/" target='_blank' rel="noreferrer"><button>View Web</button></a>
         </div>
       </div>
 
@@ -23,7 +23,7 @@ const Projects = () => {
         <div className='description'>
           <h2>Banking System</h2>
           <p className='para'></p>
-          <a href='https://github.com/Ntampul/BankingApp'><button>View Code</button></a>
+          <a href='https://github.com/Ntampul/BankingApp' target='_blank' rel="noreferrer"><button>View Code</button></a>
         </div>
       </div>
 
