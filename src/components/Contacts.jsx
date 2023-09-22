@@ -131,7 +131,7 @@ const Contacts = () => {
           <FaInstagram size="3rem" color="white" class="social-icon" />
         </a>
       </div>
-  
+
       <div className="copyright">
         &copy; 2023 Mthunzi Ntampula. All rights reserved.
       </div>

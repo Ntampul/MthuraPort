@@ -3,12 +3,12 @@
 .containerr {
   /* margin-top: 20%; */
     height: 550px;
-    max-width:750px; 
+    max-width:900px; 
     margin:  auto;
     border-collapse: collapse;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-     padding: 1px;
+     padding: 20px;
     border-radius: 7px;
     box-shadow: 20px 20px 20px #ce60071a;
     
@@ -29,12 +29,15 @@
   textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
-    
+    border: 4px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     justify-content: center;
-  }
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
   .error {
     color: #ff0000;
     font-size: 14px;
@@ -49,7 +52,7 @@
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    -webkit-border-radius: 4px;
+    -webkit-border-radius: 20px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
@@ -73,11 +76,11 @@
     margin-bottom: 10vh;
     text-align: center;
     font-size: 30px;
-    transform:translate(0%,60%);
-    -webkit-transform:translate(0%,60%);
-    -moz-transform:translate(0%,60%);
-    -ms-transform:translate(0%,60%);
-    -o-transform:translate(0%,60%);
+    transform:translate(0%,90%);
+    -webkit-transform:translate(0%,90%);
+    -moz-transform:translate(0%,90%);
+    -ms-transform:translate(0%,90%);
+    -o-transform:translate(0%,90%);
     -webkit-transform: translate(0%,0%)  ;
 }
 
@@ -91,13 +94,20 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* Increase the size on hover */
-  color:  #19635A; /* Change the color on hover (you can use your desired color) */
-  background-color:  #19635A;;
+  transform: scale(1.5);
+  /*Increasethesizeonhover*/color:  #19635A;
+  /*Changethecoloronhover(youcanuseyourdesiredcolor)*/background-color:  #19635A;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 .paddd{
 
 padding-top:10vh; 
- height: 100vh;
+ height: 90vh;
+}
+.popup{
+  font-size: large;
 }
 

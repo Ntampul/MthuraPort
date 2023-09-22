@@ -52,26 +52,30 @@
 
 
 .btn {
-   display: inline-block; 
-  width: 190px;
-  padding: 1rem 2.8rem;
-  /* margin-top: 5px; */
-  background-color: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: var(--box-shadow);
-  font-size: 1.6rem;
-  color: var(--second-bg-color);
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  cursor: pointer;
+ display: flex;
+ width: 190px;
+ padding: 1rem 2.8rem;
 
-  justify-content: center;
-  align-items: center;
-  -webkit-border-radius: 4rem;
-  -moz-border-radius: 4rem;
-  -ms-border-radius: 4rem;
-  -o-border-radius: 4rem;
-  
+ transform: ;
+ background-color: var(--main-color);
+ border-radius: 4rem;
+ box-shadow: var(--box-shadow);
+ font-size: 1.6rem;
+ color: var(--second-bg-color);
+ letter-spacing: 0.1rem;
+ font-weight: 600;
+ cursor: pointer;
+ justify-content: left;
+ align-items: left;
+ text-align: left;
+ -webkit-border-radius: 4rem;
+ -moz-border-radius: 4rem;
+ -ms-border-radius: 4rem;
+ -o-border-radius: 4rem;
+ -webkit-transform:;
+ -moz-transform:;
+ -ms-transform:;
+ -o-transform:;
 }
 
 
@@ -313,8 +317,8 @@ align-items: center;
 
   .cv {
     margin-top: 1px; /* Reduce top margin further for iPhone SE */
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     
 
   }

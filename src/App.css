@@ -169,30 +169,30 @@ html,
 
  .about__sub-title{
 	font-size: 30px;
-	transform: translate(0%, 50%);
-	-webkit-transform: translate(0%, 50%);
-	-moz-transform: translate(0%, 50%);
-	-ms-transform: translate(0%, 50%);
-	-o-transform: translate(0%, 50%);
+	transform: translate(0%, 500%);
+	-webkit-transform: translate(0%, 500%);
+	-moz-transform: translate(0%, 500%);
+	-ms-transform: translate(0%, 500%);
+	-o-transform: translate(0%, 500%);
 	text-align: center;
 }
 .descr{
 	font-size: 15px;
-	transform: translate(0%, 70%);
-	-webkit-transform: translate(0%, 70%);
-	-moz-transform: translate(0%, 70%);
-	-ms-transform: translate(0%, 70%);
-	-o-transform: translate(0%, 70%);
+	transform: translate(0%, 250%);
+	-webkit-transform: translate(0%, 250%);
+	-moz-transform: translate(0%, 250%);
+	-ms-transform: translate(0%, 250%);
+	-o-transform: translate(0%, 250%);
 }
 
 .skills{
 	font-size: 30px;
-	transform: translate(0%, 200% );
+	transform: translate(0%, 500% );
 	text-align: center;
-	-webkit-transform: translate(0%, 200% );
-	-moz-transform: translate(0%, 200% );
-	-ms-transform: translate(0%, 200% );
-	-o-transform: translate(0%, 200% );
+	-webkit-transform: translate(0%, 500% );
+	-moz-transform: translate(0%, 500% );
+	-ms-transform: translate(0%, 500% );
+	-o-transform: translate(0%, 500% );
 }
 .Skills_Icon{
 	display: flex;
